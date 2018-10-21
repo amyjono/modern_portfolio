@@ -35,6 +35,10 @@ h1, h2, h3 {
     }
 }
 
+h3 {
+    color: $secondary-color; 
+}
+
 a {
     color: #fff;
     text-decoration: none;
@@ -80,15 +84,16 @@ main {
     display: grid;
     grid-gap: 30px;
     grid-template-areas:
-    'bioimage bio bio'
-    'job1 job2 job3';
-    grid-template-columns: repeat(3, 1fr);
+    'bioimage bioimage bio bio bio bio'
+    'job1 job1 job1 job2 job2 job2';
+    grid-template-columns: repeat(6, 1fr);
 
     .bio-image {
         grid-area: bioimage;
         margin: auto;
+        width: 90%;
         border-radius: 50%;
-        border: $secondary-color 3px solid;
+        border: $accent-color 3px solid;
     }
     
     .bio {
@@ -97,24 +102,20 @@ main {
     }
     
     .job-1 {
-        grid-area: job2;
-    }
-    
-    .job-2 {
-        grid-area: job3;
-    }
-    
-    .job-3 {
         grid-area: job1;
     }
     
+    .job-2 {
+        grid-area: job2;
+    }
+    
     .job {
-       background: lighten($primary-color, 5);
+      /* background: lighten($primary-color, 5);*/
        padding: 0.5rem;
-       border-bottom: $secondary-color 5px solid; 
+      /* border-bottom: $accent-color 5px solid; */
+       font-size: 1.3rem;
     }
 }
-
 
 // Work projects
 .projects {
