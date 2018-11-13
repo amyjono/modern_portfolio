@@ -1,3 +1,18 @@
+//initialize slick slider
+$(document).ready(function(){
+    $('.projectSlider').slick({
+      autoplay: true,
+      dots: true,
+      infinite: true,
+      speed: 700,
+      autoplaySpeed: 2000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false
+    });
+  });
+
+
 // Select DOM items
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
@@ -32,3 +47,4 @@ function toggleMenu() {
         showMenu = false;
     }
 }
+
