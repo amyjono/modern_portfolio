@@ -1,23 +1,20 @@
 // Wide screens
 @include mediaXl {
-    .projects {
-        grid-template-columns: repeat(4, 1fr);
-    }
+
 }
 
 // Desktops and laptops                                     
 @include mediaLg {
-    .projects {
-        grid-template-columns: repeat(3, 1fr);
+    .projectSlider div {
+        max-height: 45vh;
     }
 }
 
 // Tablets and small laptops
 @include mediaMd {
-    main {
-        align-items: center;
-        text-align: center;
 
+    main {
+      
         .lg-heading {
             line-height: 1;
             margin-bottom: 1rem;
@@ -52,26 +49,22 @@
         }
     }
 
-    .about-info{
-        grid-template-areas:
-        'bioimage'
-        'bio'
-        'job1'
-        'job2'
-        'job3';
-
-        grid-template-columns: 1fr;
+    .projectSlider div {
+        max-height: 29vh;
     }
 
-    .projects {
-        grid-template-columns: repeat(2, 1fr);
+    .contact-info {
+        width: 95%;
+        padding: 30px;
     }
+
 }
 
 // Smartphones
 @include mediaSm {
+
     main {
-        padding: 2rem;
+        padding-top: 2rem;
         
         #home h1 {
             margin-top: 10vh;
@@ -83,7 +76,13 @@
         }
     }
 
-    .projects {
-        grid-template-columns: 1fr;
+    .projectSlider div {
+        max-height: 18vh;
     }
+
+    .contact-info {
+        width: 95%;
+        padding: 15px;
+    }
+
 }

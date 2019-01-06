@@ -7,6 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:300" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>Welcome To My Portfolio</title>
 </head>
@@ -25,19 +30,19 @@
             </div>
             <ul class="menu-nav">
                 <li class="nav-item current">
-                    <a href="/" class="nav-link">Home
+                    <a href="index.html" class="nav-link">Home
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="about.html" class="nav-link">About Me
+                    <a href="#about" class="nav-link">About Me
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="work.html" class="nav-link">My Work
+                    <a href="#work" class="nav-link">My Work
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="contact.html" class="nav-link">How To Reach Me
+                    <a href="#contact" class="nav-link">Contact
                     </a>
                 </li>
             </ul>
@@ -49,19 +54,183 @@
             Amy <span class="text-secondary">Johnson</span>
         </h1>
         <h2 class="sm-heading">
-            Web Developer &amp; Retoucher
+            Web Developer &amp; Retoucher - I create usable, responsive websites.
         </h2>
-        <div class="icons">
-            <a href="#!">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="#!">
-                <i class="fab fa-github fa-2x"></i>
-            </a>
+        <div class="further-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <a href="#about">
+                        <div class="info-link">
+                            <i class="far fa-smile fa-2x"></i>
+                            <br />
+                            <h3>About me</h3>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#work">
+                        <div class="info-link">
+                            <i class="far fa-file fa-2x"></i>
+                            <br />
+                            <h3>My work</h3>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#contact">
+                        <div class="info-link">
+                            <i class="far fa-envelope fa-2x"></i>
+                            <br />
+                            <h3>Contact me</h3>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="see-more">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="#about"><i class="fas fa-arrow-circle-down fa-3x" id="see-more-arrow"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+    <div id="about">
+        <div class="panel">
+            <div class="container about-info">
+                <div class="row">
+                    <div class="col-12 center">
+                    <h2 class="lg-heading animation-element bounce-up">
+                            About <span class="text-secondary">Me</span>
+                    </h2>
+                        <div class="bio animation-element bounce-up">
+                            <p>I taught myself to code, which has led me to get a job as a full-time Web Developer for an agency in Norwich. I previously worked as a Retoucher for a number of years, and my professional Photoshop skills really come in handy for mocking up projects or tweaks to existing imagery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="panel-color">
+                <div class="container center about-info">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="job job-1">
+                                <div class="animation-element bounce-up">
+                                    <h2>Junior Web Developer</h2>
+                                    <h3>Norwich, Norfolk</h3>
+                                </div>
+                                <div class="animation-element bounce-up">
+                                    <p>I am regularly working with a variety of technologies such as ASP.net, classic ASP, HTML, Javascript, CSS, PHP (WordPress), and Kentico CMS.</p>
+                                    <p>My technical day to day duties include: Implementing new features on sites, hardcoding WordPress template files, improving SEO, getting SSL certificates verified and installed, uploading and retrieving site files using FTP, implementing in-house responsive grids, adapting sites so that they are fully responsive, testing functionality and design on different devices and browsers. 
+                                    </p>
+                                    <p>I also have experience with wireframing and design, client meetings for website proposals, and technical support over the phone.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="container center about-info animation-element bounce-up">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="job job-2">
+                                <h2 class="animation-element bounce-up">Interests</h2>
+                                <div class="animation-element bounce-up">
+                                    <p>In my spare time I enjoy developing my skills further and thinking of new ideas for projects that will challenge me. I try to make some time for learning, I would like to create more personal projects using React JS, C#, or PHP. I also enjoy cycling and skiing.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="work">
+        <div class="panel-dark">
+            <div class="container center">
+                <div class="row">
+                    <h2 class="lg-heading animation-element bounce-up">
+                        My <span class="text-secondary">Work</span>
+                    </h2>
+                    <div class="animation-element bounce-up">
+                        <p>Below I will feature a selection of my personal projects. More content coming soon...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div>     
+                <div class="projectSlider">
+                        <div><a href="#"><img src="img/projects/project1.jpg" class="img" alt="Project 1"></a></div>
+                        <div><a href="#"><img src="img/projects/project2.jpg" class="img" alt="Project 2"></a></div>
+                        <div><a href="#"><img src="img/projects/project3.jpg" class="img" alt="Project 3"></a></div>
+                </div>
+            </div>
+            <!--
+            <div class="panel-color">
+                <div class="container center">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="animation-element bounce-up">
+                                <p>This is where I will feature a selection of my personal projects. Content coming soon...</p>
+                            </div>
+                                <ul class="project-list">
+                                    <li class="animation-element bounce-up"><div class="underline"><a href="#"><i class="fas fa-project-diagram"></i>  Project 1</a></div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, laudantium distinctio! Enim aut consequatur fugit amet qui repellendus ipsa! Voluptates ut porro animi? Natus, nihil.</p>
+                                    </li><br />
+                                    <li class="animation-element bounce-up"><div class="underline"><a href="#"><i class="fas fa-project-diagram"></i>  Project 2</a></div>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae a ullam, aliquid accusamus culpa ad voluptatibus ipsum enim eveniet vel numquam magni reprehenderit. Doloremque officiis ad ducimus perferendis? Perferendis, quo!</p>
+                                    </li><br />
+                                    <li class="animation-element bounce-up"><div class="underline"><a href="#"><i class="fas fa-project-diagram"></i>  Project 3</a></div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum voluptatem nemo excepturi tempora, dignissimos eos tenetur nisi laboriosam, soluta amet molestiae mollitia at qui.</p>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div id="contact">
+                <div class="panel">
+                    <div class="container center">
+                        <div class="row contact-info">
+                            <h1 class="lg-heading animation-element bounce-up">
+                                    Contact <span class="text-secondary">Me</span>
+                            </h1>
+                            <div class="underline animation-element bounce-up">
+                                <h2 class="text-secondary"><b>Email:</b></h2>
+                                <p>
+                                <a href="mailto:that.developer.amy@gmail.com">that.developer.amy@gmail.com</a>
+                                </p>
+                            </div>
+                            <div class="icons animation-element bounce-up">
+                                <a href="https://www.linkedin.com/in/amy-johnson-022bb0119/" target="_blank">
+                                    <i class="fab fa-linkedin fa-4x"></i>
+                                </a>
+                                <a href="https://github.com/amyjono" target="_blank">
+                                    <i class="fab fa-github fa-4x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <footer id="main-footer">
+                Copyright &copy; 2019
+        </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/slick.js"></script>
+    
+    <!--[if lte IE 8]>
+        <div class="browserBanner"><i class="fas fa-exclamation-triangle"></i>  This site does not fully support your version of Microsoft Internet Explorer, please download the latest version.</div>
+        <![endif]-->      
+
 </body>
 
 </html>
