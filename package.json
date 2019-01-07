@@ -7,7 +7,7 @@
   "homepage": "https://amyjono.github.io/modern_portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist --'Fixed css link'"
+    "deploy": "gh-pages -d dist --'updates'"
   },
   "author": "Amy Johnson",
   "license": "MIT",
