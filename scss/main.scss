@@ -211,6 +211,13 @@ main {
 
 }
 
+button {
+    padding: 10px;
+    color:#ffffff;
+    background-color: $accent;
+    border: none;
+}
+
 .browserBanner {
     background-color: #000;
     color: #fff;
@@ -219,6 +226,7 @@ main {
     font-size: 1.5em;
     width: 100%;
 }
+
 
 // About 
 

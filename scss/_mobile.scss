@@ -8,6 +8,18 @@
     .projectSlider div {
         max-height: 45vh;
     }
+
+    .slick-slide {
+        position: relative;
+    
+            .slide-info {
+                bottom: 60px;
+                left: 60px;
+
+        }
+    }
+    
+
 }
 
 // Tablets and small laptops
@@ -19,6 +31,10 @@
             line-height: 1;
             margin-bottom: 1rem;
         }
+    }
+
+    #home h1.lg-heading {
+        margin-top: 15vh;
     }
 
     ul.menu-nav,
@@ -39,7 +55,7 @@
     }
 
     .menu-branding {
-        height: 25vh;
+        height: 0vh;
         transform: translate3d(100%,0,0);
 
         .portrait {
@@ -49,8 +65,22 @@
         }
     }
 
+    main #see-more-arrow {
+        margin-top: 15vh;
+    }
+
     .projectSlider div {
         max-height: 29vh;
+    }
+
+    .slick-slide {
+        position: relative;
+    
+            .slide-info {
+                bottom: 60px;
+                left: 60px;
+
+        }
     }
 
     .contact-info {
@@ -63,12 +93,12 @@
 // Smartphones
 @include mediaSm {
 
+    #home h1.lg-heading {
+        margin-top: 5vh;
+    }
+
     main {
         padding-top: 2rem;
-        
-        #home h1 {
-            margin-top: 10vh;
-        }
 
         .lg-heading {
             margin-top: 1rem;
@@ -76,8 +106,18 @@
         }
     }
 
+    main #see-more-arrow {
+        margin-top: 8vh;
+    }
+
     .projectSlider div {
         max-height: 18vh;
+    }
+
+    .slick-slide .slide-info {
+        bottom: 0;
+        left: 0;
+        padding: 10px;
     }
 
     .contact-info {
