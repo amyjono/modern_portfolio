@@ -3,6 +3,20 @@
 .slick-loading .slick-list {
   background: #fff url("./ajax-loader.gif") center center no-repeat; }
 
+.slick-slide {
+  position: relative; }
+  .slick-slide .slide-info {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); }
+    .slick-slide .slide-info button {
+      padding: 10px;
+      color: #ffffff;
+      background-color: #5b5b93;
+      border: none; }
+
 /* Icons */
 @font-face {
   font-family: "slick";
@@ -42,7 +56,7 @@
       opacity: 1; }
   .slick-prev.slick-disabled:before,
   .slick-next.slick-disabled:before {
-    opacity: 0.25; }
+    opacity: 0.4; }
   .slick-prev:before,
   .slick-next:before {
     font-family: "slick";
@@ -121,10 +135,10 @@
         font-size: 32px;
         line-height: 20px;
         text-align: center;
-        color: #17202e;
-        opacity: 0.25;
+        color: #ffffff;
+        opacity: 0.4;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale; }
     .slick-dots li.slick-active button:before {
-      color: #17202e;
+      color: #000000;
       opacity: 1; }

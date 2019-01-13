@@ -7,7 +7,7 @@ $(document).ready(function(){
       dots: true,
       infinite: true,
       speed: 700,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 10000,
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false
@@ -33,9 +33,6 @@ function check_if_in_view() {
       if ((element_bottom_position >= window_top_position) &&
         (element_top_position <= window_bottom_position)) {
         $element.addClass('in-view');
-      } else {
-        $element.removeClass('in-view');
-        $element.addClass('viewed');
       }
     });
   }
