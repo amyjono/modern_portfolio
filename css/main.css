@@ -41,7 +41,7 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #171f2d;
+    background: #10141c;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
@@ -348,10 +348,11 @@ body {
   position: relative; }
   .slick-slide .slide-info {
     position: absolute;
-    bottom: 60px;
-    left: 60px;
+    bottom: 120px;
+    left: 120px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.7); }
+    background: rgba(0, 0, 0, 0.7);
+    width: 300px; }
     .slick-slide .slide-info button {
       padding: 10px;
       color: #ffffff;
@@ -630,6 +631,12 @@ main {
     -webkit-transform: scaleX(1);
     transform: scaleX(1); }
 
+button {
+  padding: 10px;
+  color: #ffffff;
+  background-color: #5b5b93;
+  border: none; }
+
 .browserBanner {
   background-color: #000;
   color: #fff;
@@ -704,12 +711,19 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projectSlider div {
-    max-height: 45vh; } }
+    max-height: 45vh; }
+  .slick-slide {
+    position: relative; }
+    .slick-slide .slide-info {
+      bottom: 60px;
+      left: 60px; } }
 
 @media screen and (max-width: 768px) {
   main .lg-heading {
     line-height: 1;
     margin-bottom: 1rem; }
+  #home h1.lg-heading {
+    margin-top: 15vh; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -723,28 +737,41 @@ main {
     transform: translate3d(-100%, 0, 0);
     font-size: 24px; }
   .menu-branding {
-    height: 25vh;
+    height: 0vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
       background: url("../img/portrait_small.jpg");
       width: 150px;
       height: 150px; }
+  main #see-more-arrow {
+    margin-top: 15vh; }
   .projectSlider div {
     max-height: 29vh; }
+  .slick-slide {
+    position: relative; }
+    .slick-slide .slide-info {
+      bottom: 60px;
+      left: 60px; }
   .contact-info {
     width: 95%;
     padding: 30px; } }
 
 @media screen and (max-width: 500px) {
+  #home h1.lg-heading {
+    margin-top: 5vh; }
   main {
     padding-top: 2rem; }
-    main #home h1 {
-      margin-top: 10vh; }
     main .lg-heading {
       margin-top: 1rem;
       font-size: 5rem; }
+  main #see-more-arrow {
+    margin-top: 8vh; }
   .projectSlider div {
     max-height: 18vh; }
+  .slick-slide .slide-info {
+    bottom: 0;
+    left: 0;
+    padding: 10px; }
   .contact-info {
     width: 95%;
     padding: 15px; } }
